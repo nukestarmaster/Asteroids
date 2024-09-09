@@ -1,3 +1,5 @@
+import pygame
+
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 
@@ -10,3 +12,12 @@ PLAYER_RADIUS = 20
 PLAYER_TURN_SPEED = 300
 PLAYER_ACCELERATION = 60
 PLAYER_FRICTION = 0.1
+PLAYER_SHOOT_COOLDOWN = 0.3
+
+SHOT_RADIUS = 5
+SHOT_SPEED = 500
+
+updatable = pygame.sprite.Group()
+drawable = pygame.sprite.Group()
+asteroids = pygame.sprite.Group()
+shots = pygame.sprite.Group()
